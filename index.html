@@ -14,13 +14,38 @@
     <div class="right">
         <div class="top">This is not a real online service! Sign up now to sign up.</div>
         <div class="middle" style="font-size: 20px">
+        <div style="padding:50px"> 
             Sign Up
             <form action="post">
-                <label for="first_name">First Name:</label>
-                <input type="text">
+                <div class="fields">
+                    <div class="left-inputs">
+                        <label for="first_name" name="first_name">First Name:</label>
+                        <input type="text">
+
+                        <label for="email_add" name="email_add">Email Address:</label>
+                        <input type="email" placeholder="example@email.com">
+
+                        <label for="pass" name="pass">Password:</label>
+                        <input type="password">
+                    </div>
+                    <div class="right-inputs">
+                        <label for="last_name" name="last_name">Last Name:</label>
+                        <input type="text">
+
+                        <label for="phone_num" name="phone_num">Phone Number:</label>
+                        <input type="tel" placeholder="123-456-789">
+
+                        <label for="confirm_pass" name="confirm_pass">Confirm Password:</label>
+                        <input type="password">
+                    </div>
+                </div>
             </form>
         </div>
-        <div class="bottom">Bottom</div>
+        </div>
+        <div class="bottom">
+            <button type="submit" id="submit-button">Submit</button>
+            <br><br>Already have an account? <a href="index.html">Log In</a>
+        </div>
     </div>
 </body>
 </html>
